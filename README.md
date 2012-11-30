@@ -1,4 +1,4 @@
-# Super Hash
+# Super Hash [![Build Status](https://secure.travis-ci.org/kinesisptyltd/super_hash.png)](http://travis-ci.org/kinesisptyltd/super_hash?branch=master)
 
 Provides a way to wrap the standard Ruby hash in a struct like object that supports arbitrary nesting, whilst
 maintaining the original Hash interface.
@@ -8,7 +8,7 @@ maintaining the original Hash interface.
 Add the following to your Gemfile:
 
 ```
-gem 'super_hash', :git => 'git://github.com/Soliah/super_hash.git'
+gem 'super_hash', :git => 'git://github.com/kinesisptyltd/super_hash.git'
 ```
 
 ## Usage
