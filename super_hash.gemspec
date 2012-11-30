@@ -8,4 +8,10 @@ Gem::Specification.new do |s|
   s.email       = 'chris@chowie.net'
   s.files       = Dir.glob('lib/**/*.rb')
   s.homepage    = 'https://github.com/Soliah/super_hash'
+
+  s.add_runtime_dependency('i18n')
+  s.add_runtime_dependency('active_support')
+
+  s.add_development_dependency('rspec')
+  s.add_development_dependency('json_spec')
 end

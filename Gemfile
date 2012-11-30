@@ -1,9 +1,3 @@
-source :rubygems
-
-gem 'i18n'
-gem 'active_support'
+source 'https://rubygems.org'
 
 gemspec
-
-gem 'rspec'
-gem 'json_spec'
