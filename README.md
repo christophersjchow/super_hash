@@ -15,6 +15,26 @@ gem 'super_hash', :git => 'git://github.com/kinesisptyltd/super_hash.git'
 
 Simply `require 'super_hash'` where you need it.
 
+### Examples
+
+Say you have the following hash:
+
+```
+hash = SuperHash.new({ 'test' =>
+         { 'x' => 7,
+           'yellow' => [{'b' => 'hello'}, {'c' => 'onetwo'}]
+         }
+       })
+```
+
+With SuperHash, you can do this:
+
+```
+hash.test => { 'x' => 7, 'yellow' => [{'b' => 'hello'}, {'c' => 'onetwo'}]
+hash.test.x => 7
+hash[:test].yellow[0].b => 'hello'
+```
+
 ## License
 
 (The MIT License)
