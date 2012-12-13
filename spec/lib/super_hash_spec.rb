@@ -9,6 +9,17 @@ describe SuperHash do
     }
   }
 
+  describe 'does not override existing methods' do
+    class Dummy < SuperHash
+      def foo
+        'returned a value'
+      end
+    end
+
+    subject(:dummy) { Dummy.new({ :foo => 0 }).foo }
+    it { should eq 'returned a value' }
+  end
+
   describe 'acts like a struct' do
     subject { SuperHash.new(attributes) }
 

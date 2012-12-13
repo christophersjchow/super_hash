@@ -25,8 +25,10 @@ class SuperHash < Delegator
 
   def define_key_methods!
     self.attributes.each do |key, value|
-      self.class.send(:define_method, key.to_sym) do
-        self.attributes[key]
+      unless self.respond_to?(key.to_sym)
+        self.class.send(:define_method, key.to_sym) do
+          self.attributes[key]
+        end
       end
     end
   end
