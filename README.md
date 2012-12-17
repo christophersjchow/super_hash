@@ -8,7 +8,7 @@ maintaining the original Hash interface.
 Add the following to your Gemfile:
 
 ```
-gem 'super_hash', :git => 'git://github.com/Soliah/super_hash.git'
+gem 'super_hash'
 ```
 
 ## Usage
