@@ -1,8 +1,17 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'json_spec'
+require "rubygems"
+require "bundler/setup"
+require "json_spec"
 
-require_relative '../lib/super_hash'
+require "simplecov"
+require "coveralls"
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
+
+require_relative "../lib/super_hash"
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
@@ -13,5 +22,5 @@ RSpec.configure do |config|
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
-  config.order = 'random'
+  config.order = "random"
 end
