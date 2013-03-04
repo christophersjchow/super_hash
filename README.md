@@ -1,4 +1,4 @@
-# Super Hash [![Build Status](https://secure.travis-ci.org/Soliah/super_hash.png)](http://travis-ci.org/Soliah/super_hash?branch=master) [![Coverage Status](https://coveralls.io/repos/Soliah/super_hash/badge.png?branch=master)](https://coveralls.io/r/Soliah/super_hash) [![Dependency Status](https://gemnasium.com/Soliah/super_hash.png)](https://gemnasium.com/Soliah/super_hash)
+# Super Hash [![Build Status](https://secure.travis-ci.org/Soliah/super_hash.png)](http://travis-ci.org/Soliah/super_hash?branch=master) [![Coverage Status](https://coveralls.io/repos/Soliah/super_hash/badge.png?branch=master)](https://coveralls.io/r/Soliah/super_hash) [![Code Climate](https://codeclimate.com/github/Soliah/super_hash.png)](https://codeclimate.com/github/Soliah/super_hash) [![Dependency Status](https://gemnasium.com/Soliah/super_hash.png)](https://gemnasium.com/Soliah/super_hash)
 
 
 Provides a way to wrap the standard Ruby hash in a struct like object that supports arbitrary nesting, whilst
